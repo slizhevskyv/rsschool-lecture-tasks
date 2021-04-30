@@ -1,9 +1,8 @@
 #import <Foundation/Foundation.h>
 
-@interface Shape: NSObject
+@protocol ShapeType <NSObject>
 
 -(float)area;
 -(float)perimeter;
--(NSString *)description;
 
 @end

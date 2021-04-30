@@ -1,8 +1,7 @@
 #import <Foundation/Foundation.h>
-#import "Shape.h"
+#import "ShapeType.h"
 
-
-@interface Triangle: Shape
+@interface Triangle: NSObject <ShapeType>
 
 +(Triangle *)create;
 

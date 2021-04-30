@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
-#import "Shape.h"
+#import "ShapeType.h"
 
-@interface Circle: Shape
+@interface Circle: NSObject <ShapeType>
 
 +(Circle *)create;
 

@@ -1,8 +1,7 @@
 #import <Foundation/Foundation.h>
-#import "Shape.h"
+#import "ShapeType.h"
 
-
-@interface Rectangle: Shape
+@interface Rectangle: NSObject <ShapeType>
 
 +(Rectangle *)create;
 
