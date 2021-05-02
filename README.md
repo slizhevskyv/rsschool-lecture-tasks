@@ -4,3 +4,9 @@
   - Step 2 - [link](https://github.com/slizhevskyv/rsschool-lecture-tasks/tree/lecture1-shapes-step-2)
   ## NSString Category
   - [link](https://github.com/slizhevskyv/rsschool-lecture-tasks/tree/lecture1-nsstring-category)
+  ## Integer Type Information
+  - [link](https://github.com/slizhevskyv/rsschool-lecture-tasks/tree/lecture1-integer-type-information)
+  ## NS_ENUM
+  - [link](https://github.com/slizhevskyv/rsschool-lecture-tasks/tree/lecture1-ns-enum)
+  ## Argument by the reference
+  - [link](https://github.com/slizhevskyv/rsschool-lecture-tasks/tree/lecture1-argument-by-reference)
