@@ -10,3 +10,5 @@
   - [link](https://github.com/slizhevskyv/rsschool-lecture-tasks/tree/lecture1-ns-enum)
   ## Argument by the reference
   - [link](https://github.com/slizhevskyv/rsschool-lecture-tasks/tree/lecture1-argument-by-reference)
+# Lecture 2
+  - [link](https://github.com/slizhevskyv/rsschool-lecture-tasks/tree/lecture2)
