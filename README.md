@@ -14,3 +14,5 @@
   - [link](https://github.com/slizhevskyv/rsschool-lecture-tasks/tree/lecture2)
 # Lecture 3
   - [link](https://github.com/slizhevskyv/rsschool-lecture-tasks/tree/lecture3)
+# Lecture 4
+  - [link](https://github.com/slizhevskyv/rsschool-lecture-tasks/tree/lecture4)
