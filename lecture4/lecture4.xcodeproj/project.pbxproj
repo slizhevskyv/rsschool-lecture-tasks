@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42951CCA2652F07000CF5E20 /* NSArray+InsertionSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 42951CC92652F07000CF5E20 /* NSArray+InsertionSort.m */; };
 		E909F95B265113BF00A240EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E909F95A265113BF00A240EE /* main.m */; };
 		E909F96326513EB500A240EE /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = E909F96226513EB500A240EE /* Person.m */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		42951CC82652F07000CF5E20 /* NSArray+InsertionSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+InsertionSort.h"; sourceTree = "<group>"; };
+		42951CC92652F07000CF5E20 /* NSArray+InsertionSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+InsertionSort.m"; sourceTree = "<group>"; };
 		E909F957265113BF00A240EE /* lecture4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lecture4; sourceTree = BUILT_PRODUCTS_DIR; };
 		E909F95A265113BF00A240EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E909F96126513EB500A240EE /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
@@ -61,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				E909F95A265113BF00A240EE /* main.m */,
+				42951CC82652F07000CF5E20 /* NSArray+InsertionSort.h */,
+				42951CC92652F07000CF5E20 /* NSArray+InsertionSort.m */,
 				E909F96126513EB500A240EE /* Person.h */,
 				E909F96226513EB500A240EE /* Person.m */,
 			);
@@ -123,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42951CCA2652F07000CF5E20 /* NSArray+InsertionSort.m in Sources */,
 				E909F96326513EB500A240EE /* Person.m in Sources */,
 				E909F95B265113BF00A240EE /* main.m in Sources */,
 			);
@@ -245,9 +251,11 @@
 		E909F95F265113BF00A240EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BSCCGM92FS;
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -255,9 +263,11 @@
 		E909F960265113BF00A240EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BSCCGM92FS;
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

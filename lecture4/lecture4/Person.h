@@ -9,9 +9,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Person : NSObject
+@interface Person : NSObject <NSCopying>
 @property(nonatomic) NSString *firstName;
 @property(nonatomic) NSString *lastName;
+
+-(instancetype) initWithFirstName: (NSString *) firstName andLastName: (NSString *) lastName;
 @end
 
 NS_ASSUME_NONNULL_END

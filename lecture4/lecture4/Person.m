@@ -9,6 +9,17 @@
 
 @implementation Person
 
+- (instancetype)initWithFirstName:(NSString *)firstName andLastName:(NSString *)lastName {
+    self = [super init];
+    
+    if (self) {
+        _firstName = firstName;
+        _lastName = lastName;
+    }
+    
+    return self;
+}
+
 - (BOOL) isEqual:(id)other {
     if (self == other) {
         return YES;
@@ -27,6 +38,22 @@
 
 - (NSUInteger) hash {
     return self.firstName.hash ^ self.lastName.hash;
+}
+
+- (nonnull id)copyWithZone:(nullable NSZone *)zone {
+    id copy = [[[self class] alloc] init];
+    
+    if (copy) {
+        [copy setFirstName:[self.firstName copyWithZone:zone]];
+        [copy setLastName:[self.lastName copyWithZone:zone]];
+    }
+    
+    return copy;
+}
+
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"Object: %@ %@", self.firstName, self.lastName];
 }
 
 @end

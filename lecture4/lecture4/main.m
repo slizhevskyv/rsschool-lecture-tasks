@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Person.h"
+#import "NSArray+InsertionSort.h"
 
 void iterateThroughArray(void) {
     NSArray *arr = @[@1, @2, @3, @4, @5];
@@ -68,10 +69,15 @@ void nsPredicateFilter(NSString *subStr) {
 }
 
 void KVCPerson(void) {
-    Person *person = [Person new];
+    Person *vs = [[Person alloc] initWithFirstName:@"Vlad" andLastName:@"Slizhevsky"];
+    Person *gs = [[Person alloc] initWithFirstName:@"Grisha" andLastName:@"Sokolov"];
+    
     NSDictionary *dict = @{
-        person: @"person",
+        vs: @"Vlad Slizhevsky",
+        gs: @"Grisha Sokolov"
     };
+    
+    NSLog(@"%@", dict);
 }
 
 NSString* removeDuplicates(NSString *str) {
@@ -90,12 +96,19 @@ NSString* removeDuplicates(NSString *str) {
     return [sortedArr componentsJoinedByString:@" "];
 }
 
+void insertionSort() {
+    NSArray *sortedArr = [@[@4, @3, @2, @10, @12, @1, @5, @6] insertionSort];
+    NSLog(@"%@", sortedArr);
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
 //        iterateThroughArray();
 //        mergeDataTest();
 //        nsPredicateFilter(@"or");
-        NSLog(@"%@", removeDuplicates(@"A bit Hello! My name is Vlad! My name is Vlad! Vlad name U too"));
+//        NSLog(@"%@", removeDuplicates(@"A bit Hello! My name is Vlad! My name is Vlad! Vlad name U too"));
+//        KVCPerson();
+        insertionSort();
     }
     return 0;
 }
